@@ -17,7 +17,7 @@ class Triangle
         puts error.message
         is_valid = false
       end
-      end
+    end
 
     if is_valid == true && @side1 == @side2 && @side2 == @side3
       :equilateral
