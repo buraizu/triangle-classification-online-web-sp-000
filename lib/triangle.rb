@@ -3,13 +3,9 @@ class Triangle
   attr_accessor :side1, :side2, :side3
 
   def initialize(side1, side2, side3)
-    @sides = []
     @side1 = side1
     @side2 = side2
     @side3 = side3
-    @sides << @side1
-    @sides << @side2
-    @sides << @side3
   end
 
   def kind
@@ -31,7 +27,6 @@ class Triangle
     elsif is_valid == true
       :isosceles
     end
-    # puts is_valid
   end
 
   class TriangleError < StandardError
